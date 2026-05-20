@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Complaint Categorization Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>
+                AI Complaint Categorization
+            </h1>
+
+            <p class="subtitle">
+                Smart Complaint Classification System
+            </p>
+
+            <textarea
+                id="complaint"
+                placeholder="Enter your complaint here...">
+            </textarea>
+
+            <button onclick="predictComplaint()">
+                Predict Category
+            </button>
+
+            <div class="loading" id="loading">
+                Processing...
+            </div>
+
+            <div class="result-box" id="resultBox">
+
+                <h2>Prediction Result</h2>
+
+                <p id="result"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
